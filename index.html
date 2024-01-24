@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header class="container mx-auto px-4">
+  <header class="container mx-auto sm:px-4 p-2">
     <!-- navbar -->
     <div class="navbar py-12 sticky z-10">
       <div class="navbar-start">
@@ -30,10 +30,10 @@
           <ul tabindex="0"
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black text-white rounded-box w-52">
             <li><a class=" hover:text-red " href="#home">Home</a></li>
-            <li><a class=" hover:text-red " href="#">About</a></li>
+            <li><a class=" hover:text-red " href="#about">About</a></li>
             <li><a class=" hover:text-red " href="#">Pages</a></li>
             <li><a class=" hover:text-red " href="#">Blog</a></li>
-            <li><a class=" hover:text-red " href="#">Contact</a></li>
+            <li><a class=" hover:text-red " href="#contact">Contact</a></li>
           </ul>
         </div>
         <a class="lg:text-4xl md:text-3xl text-xl font-extrabold">Hockey<span class="text-red">’</span>s</a>
@@ -55,7 +55,12 @@
     <div class="carousel w-full" id="home">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="./Images/1.png" class="w-full object-cover" />
-        <div class="absolute flex gap-4 transform -translate-y-1/2 left-5 right-5 md:bottom-0 -bottom-0 justify-center">
+        <div class="absolute rounded-2xl bg-black p-8 right-8 bottom-8 md:block hidden">
+          <h3 class="text-white font-extrabold text-2xl">Meet all the heroes from the field</h3>
+          <p class="text-heroSectionPColor text-base font-medium max-w-[31rem] pt-4">Dit amet consectetur. Condimentum
+            dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+        </div>
+        <div class="absolute flex gap-4 transform -translate-y-1/2 left-4 bottom-0 md:bottom-0 justify-center">
           <a href="#slide2" class="bg-black btn btn-circle lg:btn-lg md:btn-sm btn-xs md:text-sm lg:text-xl text-xs">
             <i class="fa-solid fa-chevron-left"></i>
           </a>
@@ -67,7 +72,12 @@
       <div id="slide2" class="carousel-item relative w-full">
         <img src="https://www.namsports.com/Images/General/Slider/banner29310930.webp"
           class="w-full md:rounded-3xl rounded-lg" />
-        <div class="absolute flex gap-4 transform -translate-y-1/2 left-5 right-5 md:bottom-0 -bottom-0 justify-center">
+        <div class="absolute rounded-2xl bg-black p-8 right-8 bottom-8 md:block hidden">
+          <h3 class="text-white font-extrabold text-2xl">Meet all the heroes from the field</h3>
+          <p class="text-heroSectionPColor text-base font-medium max-w-[31rem] pt-4">Dit amet consectetur. Condimentum
+            dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+        </div>
+        <div class="absolute flex gap-4 transform -translate-y-1/2 left-4 bottom-0 md:bottom-0 justify-center">
           <a href="#slide1" class="bg-black btn btn-circle lg:btn-lg md:btn-sm btn-xs md:text-sm lg:text-xl text-xs">
             <i class="fa-solid fa-chevron-left"></i>
           </a>
@@ -76,10 +86,17 @@
           </a>
         </div>
       </div>
+    </div>
+
+    <div class="rounded-2xl bg-black p-4 md:hidden block mt-4">
+          <h3 class="text-white font-extrabold text-base">Meet all the heroes from the field</h3>
+          <p class="text-heroSectionPColor text-xs font-medium max-w-[31rem] pt-2">Dit amet consectetur. Condimentum
+            dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+        </div>
   </header>
 
-  <main class="container mx-auto px-4">
-    <section class="hockey-club sm:my-28 my-14">
+  <main class="container mx-auto sm:px-4 p-2">
+    <section class="hockey-club sm:my-28 my-14" id="about">
       <div class="border-y-2 border-dotted border-borderColor py-8 text-center">
         <h3 class="md:text-4xl text-2xl font-extrabold">Professional Hockeys Club</h3>
         <p class="md:w-1/2 w-11/12 mx-auto pt-5 md:text-base text-sm font-normal leading-6">Dit amet consectetur.
@@ -374,27 +391,27 @@
       </div>
     </section>
 
-    <section class="get-in-touch sm:my-28 my-14">
+    <section class="get-in-touch sm:my-28 my-14" id="contact">
       <div class="border-y-2 border-dotted border-borderColor py-8 text-center">
         <h3 class="md:text-4xl text-2xl font-extrabold">Get In Touch</h3>
         <p class="md:w-1/2 w-11/12 mx-auto pt-5 md:text-base text-sm font-normal leading-6">Dit amet consectetur.
           Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
       </div>
 
-      <div class="hero place-items-stretch mt-12">
-        <div class="hero-content flex-col lg:flex-row gap-6">
-          <div class="md:p-14 p-4 border-productBorder border-solid border rounded-2xl space-y-6">
-            <div class="card-1 bg-green-200 max-w-96 p-8 rounded-2xl">
+      <div class="hero md:place-items-stretch place-items-center mt-12">
+        <div class="hero-content flex-col lg:flex-row gap-6 p-0">
+          <div class="md:p-14 sm:p-4 p-0 border-productBorder sm:border-solid sm:border rounded-2xl space-y-6">
+            <div class="card-1 bg-green-200 sm:max-w-96 w-72 p-8 rounded-2xl">
               <img src="Images/Group 1171275317.png" alt="">
               <span class="text-overlay text-base font-normal pt-6 block">Phone Number :<br><span
                   class="text-lg font-extrabold text-black">(+880) 1863966821</span></span>
             </div>
-            <div class="card-2 bg-yellow-200 max-w-96 p-8 rounded-2xl">
+            <div class="card-2 bg-yellow-200 sm:max-w-96 w-72 p-8 rounded-2xl">
               <img src="Images/Group 1171275318.png" alt="">
               <span class="text-overlay text-base font-normal pt-6 block">Email :<br><span
                   class="text-lg font-extrabold text-black">samirabrar333@gmail.com</span></span>
             </div>
-            <div class="card-3 bg-sky-200 max-w-96 p-8 rounded-2xl">
+            <div class="card-3 bg-sky-200 sm:max-w-96 w-72 p-8 rounded-2xl">
               <img src="Images/Group 1171275321.png" alt="">
               <span class="text-overlay text-base font-normal pt-6 block">Location :<br><span
                   class="text-lg font-extrabold text-black">Badda, Dhaka-1212</span></span>
@@ -452,7 +469,45 @@
     </section>
   </main>
 
-  <footer></footer>
+  <footer class="footer py-24 px-10 bg-black text-neutral-content">
+    <nav class="space-y-2">
+      <header class="text-2xl text-white font-bold">Get In Touch</header>
+      <p class="max-w-[21rem]">Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in
+        sit nullam proin.</p>
+      <a href="#" class="link link-hover flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75"
+            stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg> samirabrar333@gmail.com</a>
+      <a href="#" class="flex gap-2 items-center link link-hover"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z"
+            stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg> (+880) 1863966821</a>
+    </nav>
+    <nav>
+      <header class="text-lg text-white font-bold">Services</header>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <header class="text-lg text-white font-bold">Company</header>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <header class="text-lg text-white font-bold">Legal</header>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav>
+  </footer>
   <!-- All the script tags -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/1a2f2851fc.js" crossorigin="anonymous"></script>
