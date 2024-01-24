@@ -1,0 +1,19 @@
+** can use any css framework
+# main marks
+
+1.Banner section + slider + responsive
+2.Professonal hockey's club + responsive
+3.Programme section + responsive
+4.Product section + responsive
+5.Get in touch section + responsive
+6.Footer + responsive
+
+# bonus marks
+1.Meaningful 3 commits in github
+2.Banner's little section
+3.client's question section
+4.navbar + responsive
+
+#things to avoid
+
+1.Don't use dummy text

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="IE=7">
+
+          <title>Hockey's World</title>
+          <link rel="shortcut icon" href="https://icon-library.com/images/field-hockey-icon/field-hockey-icon-19.jpg" type="image/x-icon">
+
+          <!-- All the CSS files -->
+          <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" href="./assets/css/styles.css">
+          
+</head>
+<body>
+<header class="container mx-auto px-4">
+<!-- navbar -->
+<div class="navbar py-12 sticky z-10">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black text-white rounded-box w-52">
+        <li><a class=" hover:text-red " href="#home">Home</a></li>
+        <li><a class=" hover:text-red " href="#">About</a></li>
+        <li><a class=" hover:text-red " href="#">Pages</a></li>
+        <li><a class=" hover:text-red " href="#">Blog</a></li>
+        <li><a class=" hover:text-red " href="#">Contact</a></li>
+      </ul>
+    </div>
+    <a class="lg:text-4xl md:text-3xl text-xl font-extrabold">Hockey<span class="text-red">’</span>s</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-base font-normal">
+          <li><a class=" hover:text-red " href="#home">Home</a></li>
+          <li><a class=" hover:text-red " href="#">About</a></li>
+          <li><a class=" hover:text-red " href="#">Pages</a></li>
+          <li><a class=" hover:text-red " href="#">Blog</a></li>
+          <li><a class=" hover:text-red " href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a href="#" class="btn bg-red text-white hover:bg-white hover:text-red">Get Ticket</a>
+  </div>
+</div>
+<!-- Slider -->
+<div class="carousel w-full" id="home">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img src="./Images/1.png" class="w-full object-cover" />
+    <div class="absolute flex gap-4 transform -translate-y-1/2 left-5 right-5 md:bottom-0 -bottom-0 justify-center">
+      <a href="#slide2" class="bg-black btn btn-circle lg:btn-lg md:btn-sm btn-xs md:text-sm lg:text-xl text-xs">
+       <i class="fa-solid fa-chevron-left"></i>
+      </a> 
+      <a href="#slide2" class="bg-black btn btn-circle lg:btn-lg md:btn-sm btn-xs lg:text-xl md:text-sm text-xs">
+       <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+    <img src="https://www.namsports.com/Images/General/Slider/banner29310930.webp" class="w-full md:rounded-3xl rounded-lg" />
+    <div class="absolute flex gap-4 transform -translate-y-1/2 left-5 right-5 md:bottom-0 -bottom-0 justify-center">
+      <a href="#slide1" class="bg-black btn btn-circle lg:btn-lg md:btn-sm btn-xs md:text-sm lg:text-xl text-xs">
+       <i class="fa-solid fa-chevron-left"></i>
+      </a> 
+      <a href="#slide1" class="bg-black btn btn-circle lg:btn-lg md:btn-sm btn-xs lg:text-xl md:text-sm text-xs">
+       <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div> 
+</header>   
+
+<main class="container mx-auto px-4">
+   <section class="hockey-club sm:my-28 my-14">
+          <div class="border-y-2 border-dotted border-borderColor py-8 text-center">
+             <h3 class="md:text-4xl text-2xl font-extrabold">Professional Hockeys Club</h3>
+             <p class="md:w-1/2 w-11/12 mx-auto pt-5 md:text-base text-sm font-normal">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>       
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+               <div class="radial-progress-1 text-center">
+                    <div class="radial-progress text-red" style="--value:87; --size:8rem; --thickness: 1rem;" role="progressbar"><span class="text-black text-2xl font-extrabold">87%</span></div>
+                    <h4 class="font-semibold text-2xl py-5">Prayer Facility</h4>
+                    <p class="md:text-base text-sm font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+               </div>
+               <div class="radial-progress-2 text-center">
+                    <div class="radial-progress text-lightGreen" style="--value:95; --size:8rem; --thickness: 1rem;" role="progressbar"><span class="text-black text-2xl font-extrabold">95%</span></div>
+                    <h4 class="font-semibold text-2xl py-5">Experienced Coach</h4>
+                    <p class="md:text-base text-sm font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+               </div>
+               <div class="radial-progress-3 text-center">
+                    <div class="radial-progress text-yellow-300" style="--value:90; --size:8rem; --thickness: 1rem;" role="progressbar"><span class="text-black text-2xl font-extrabold">90%</span></div>
+                    <h4 class="font-semibold text-2xl py-5">Senior Player</h4>
+                    <p class="md:text-base text-sm font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+               </div>
+               <div class="radial-progress-4 text-center">
+                    <div class="radial-progress text-blue-400" style="--value:80; --size:8rem; --thickness: 1rem;" role="progressbar"><span class="text-black text-2xl font-extrabold">80%</span></div>
+                    <h4 class="font-semibold text-2xl py-5">Training Ground</h4>
+                    <p class="md:text-base text-sm font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+               </div>     
+          </div>
+   </section>
+   
+   <section class="programme">
+    <div class="border-y-2 border-dotted border-borderColor py-8 text-center">
+             <h3 class="md:text-4xl text-2xl font-extrabold">Program Sections</h3>
+             <p class="md:w-1/2 w-11/12 mx-auto pt-5 md:text-base text-sm font-normal">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>       
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 mt-12 gap-7">
+      <div class="programme-box-1 bg-[url('./Images/2.png')] bg-no-repeat bg-cover rounded-2xl">
+        <div class="bg-overlay rounded-2xl">
+          <div class="text-white md:px-10 px-4 pt-20 pb-10">
+            <h3 class="font-extrabold md:text-2xl text-xl">Junior Program</h3>
+            <p class="md:text-base text-sm font-medium py-6 md:w-5/6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+            <a href="#"><button type="button" class="bg-red p-4 font-semibold text-xl md:text-2xl rounded-lg">Register Now!</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="programme-box-2 bg-[url('./Images/3.png')] bg-no-repeat bg-cover rounded-2xl">
+        <div class="bg-overlay rounded-2xl">
+          <div class="text-white md:px-10 px-4 pt-20 pb-10">
+            <h3 class="font-extrabold md:text-2xl text-xl">Teenager Program</h3>
+            <p class="md:text-base text-sm font-medium py-6 md:w-5/6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+            <a href="#"><button type="button" class="bg-red p-4 font-semibold text-xl md:text-2xl rounded-lg">Register Now!</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="programme-box-3 bg-[url('./Images/4.png')] bg-no-repeat bg-cover lg:col-span-2 rounded-2xl">
+        <div class="bg-overlay rounded-2xl">
+          <div class="text-white md:px-10 px-4 lg:pt-48 pt-20 pb-20 lg:w-1/2 md:w-5/6">
+            <h3 class="font-extrabold md:text-2xl text-xl">Professional Program</h3>
+            <p class="md:text-base text-sm font-medium py-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+            <a href="#"><button type="button" class="bg-red p-4 font-semibold text-xl md:text-2xl rounded-lg">Register Now!</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <section class="product sm:my-28 my-14">
+    <div class="border-y-2 border-dotted border-borderColor py-8 text-center">
+             <h3 class="md:text-4xl text-2xl font-extrabold">Our New Products</h3>
+             <p class="md:w-1/2 w-11/12 mx-auto pt-5 md:text-base text-sm font-normal">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>       
+    </div>
+
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 mt-12">
+      <div class="product-1 flex flex-col md:flex-row items-center gap-8 border border-solid border-productBorder rounded-2xl p-6">
+        <div class="product-img w-72 md:w-auto">
+          <img class="md:w-auto w-full" src="Images/5.png" alt="">
+        </div>
+        <div class="product-content flex flex-col gap-4 justify-center">
+          <div class="svgs flex gap-3">
+            <img src="Images/Frame (2).png" alt=""><span>5.0</span>
+            <img src="Images/Frame (1).png" alt=""><span>20</span>
+            <img src="Images/Frame.png" alt=""><span>200</span>
+          </div>
+          <h3 class="text-black font-extrabold text-2xl">World Cup Flags Football</h3>
+          <p class="text-overlay font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class="price flex md:flex-row flex-col gap-3">
+            <span class="text-red font-extrabold text-xl">Price - $22.00</span> <img class="w-7" src="Images/Frame.svg" alt=""> <span>Delivery Fee : Free</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-2 flex flex-col md:flex-row items-center gap-8 border border-solid border-productBorder rounded-2xl p-6">
+        <div class="product-img w-72 md:w-auto">
+          <img class="md:w-auto w-full" src="Images/6.png" alt="">
+        </div>
+        <div class="product-content flex flex-col gap-4 justify-center">
+          <div class="svgs flex gap-3">
+            <img src="Images/Frame (2).png" alt=""><span>5.0</span>
+            <img src="Images/Frame (1).png" alt=""><span>20</span>
+            <img src="Images/Frame.png" alt=""><span>200</span>
+          </div>
+          <h3 class="text-black font-extrabold text-2xl">World Cup Flags Football</h3>
+          <p class="text-overlay font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class="price flex md:flex-row flex-col gap-3">
+            <span class="text-red font-extrabold text-xl">Price - $22.00</span> <img class="w-7" src="Images/Frame.svg" alt=""> <span>Delivery Fee : Free</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-3 flex flex-col md:flex-row items-center gap-8 border border-solid border-productBorder rounded-2xl p-6">
+        <div class="product-img w-72 md:w-auto">
+          <img class="md:w-auto w-full" src="Images/7.png" alt="">
+        </div>
+        <div class="product-content flex flex-col gap-4 justify-center">
+          <div class="svgs flex gap-3">
+            <img src="Images/Frame (2).png" alt=""><span>5.0</span>
+            <img src="Images/Frame (1).png" alt=""><span>20</span>
+            <img src="Images/Frame.png" alt=""><span>200</span>
+          </div>
+          <h3 class="text-black font-extrabold text-2xl">World Cup Flags Football</h3>
+          <p class="text-overlay font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class="price flex md:flex-row flex-col gap-3">
+            <span class="text-red font-extrabold text-xl">Price - $22.00</span> <img class="w-7" src="Images/Frame.svg" alt=""> <span>Delivery Fee : Free</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-4 flex flex-col md:flex-row items-center gap-8 border border-solid border-productBorder rounded-2xl p-6">
+        <div class="product-img w-72 md:w-auto">
+          <img class="md:w-auto w-full" src="Images/8.png" alt="">
+        </div>
+        <div class="product-content flex flex-col gap-4 justify-center">
+          <div class="svgs flex gap-3">
+            <img src="Images/Frame (2).png" alt=""><span>5.0</span>
+            <img src="Images/Frame (1).png" alt=""><span>20</span>
+            <img src="Images/Frame.png" alt=""><span>200</span>
+          </div>
+          <h3 class="text-black font-extrabold text-2xl">World Cup Flags Football</h3>
+          <p class="text-overlay font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class="price flex md:flex-row flex-col gap-3">
+            <span class="text-red font-extrabold text-xl">Price - $22.00</span> <img class="w-7" src="Images/Frame.svg" alt=""> <span>Delivery Fee : Free</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-5 flex flex-col md:flex-row items-center gap-8 border border-solid border-productBorder rounded-2xl p-6">
+        <div class="product-img w-72 md:w-auto">
+          <img class="md:w-auto w-full" src="Images/9.png" alt="">
+        </div>
+        <div class="product-content flex flex-col gap-4 justify-center">
+          <div class="svgs flex gap-3">
+            <img src="Images/Frame (2).png" alt=""><span>5.0</span>
+            <img src="Images/Frame (1).png" alt=""><span>20</span>
+            <img src="Images/Frame.png" alt=""><span>200</span>
+          </div>
+          <h3 class="text-black font-extrabold text-2xl">World Cup Flags Football</h3>
+          <p class="text-overlay font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class="price flex md:flex-row flex-col gap-3">
+            <span class="text-red font-extrabold text-xl">Price - $22.00</span> <img class="w-7" src="Images/Frame.svg" alt=""> <span>Delivery Fee : Free</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-6 flex flex-col md:flex-row items-center gap-8 border border-solid border-productBorder rounded-2xl p-6">
+        <div class="product-img w-72 md:w-auto">
+          <img class="md:w-auto w-full" src="Images/10.png" alt="">
+        </div>
+        <div class="product-content flex flex-col gap-4 justify-center">
+          <div class="svgs flex gap-3">
+            <img src="Images/Frame (2).png" alt=""><span>5.0</span>
+            <img src="Images/Frame (1).png" alt=""><span>20</span>
+            <img src="Images/Frame.png" alt=""><span>200</span>
+          </div>
+          <h3 class="text-black font-extrabold text-2xl">World Cup Flags Football</h3>
+          <p class="text-overlay font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class="price flex md:flex-row flex-col gap-3">
+            <span class="text-red font-extrabold text-xl">Price - $22.00</span> <img class="w-7" src="Images/Frame.svg" alt=""> <span>Delivery Fee : Free</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   </section>
+
+   <section class="client">
+    <div class="border-y-2 border-dotted border-borderColor py-8 text-center">
+             <h3 class="md:text-4xl text-2xl font-extrabold">Clients Question</h3>
+             <p class="md:w-1/2 w-11/12 mx-auto pt-5 md:text-base text-sm font-normal">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>       
+          </div>
+   </section>
+</main>
+
+<footer></footer>
+<!-- All the script tags -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/1a2f2851fc.js" crossorigin="anonymous"></script>
+<script src="./assets/js/my.js"></script>
+</body>
+</html>
